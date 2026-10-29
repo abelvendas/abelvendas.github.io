@@ -3,22 +3,22 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Matheus Abelardo Landing Pages</title>
+<title>Matheus Abelardo Desenvolvimento Web</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Onest:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
-<meta name="description" content="Landing pages rápidas, leves e prontas para compartilhar no WhatsApp e Instagram. Grupos, vitrines, promoções e sites simples. Entrega a partir de 48 h.">
+<meta name="description" content="Precisa de um site? Desenvolvo sites sob medida para o seu negócio: institucionais, landing pages, lojas, catálogos e sistemas web, responsivos para celular e computador.">
 <meta name="theme-color" content="#2F45E8">
 <!-- Publique esta pasta num repositório chamado "portfolio" no GitHub Pages. Se usar outro nome, ajuste a URL do og:image -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="Matheus Abelardo · Landing pages em 48 h">
-<meta property="og:description" content="Páginas rápidas para grupos de WhatsApp, vitrines, promoções e negócios locais.">
+<meta property="og:title" content="Matheus Abelardo · Sites sob medida para o seu negócio">
+<meta property="og:description" content="Sites institucionais, landing pages, lojas e sistemas web. Precisa de um site? Me chame.">
 <meta property="og:image" content="https://abelardo-matheus.github.io/portfolio/assets/foto_avatar.jpg">
 <meta name="twitter:card" content="summary">
 <link rel="icon" href="assets/foto_avatar.jpg">
 <style>
-/* Layout: página de vendas em faixas horizontais; hero com o "card de prévia" que aparece quando o link é colado no WhatsApp */
+/* Layout: página de vendas em faixas horizontais; hero de uma coluna com a chamada principal */
 :root{
   --paper:#F3F5F8; --surface:#FFFFFF; --ink:#141A24; --muted:#5A6475; --line:#DCE1EA;
   --cobalt:#2F45E8; --cobalt-soft:#E6E9FF; --zap:#178C48; --zap-ink:#FFFFFF; --chat:#E7F6EC; --bubble:#FFFFFF;
@@ -63,57 +63,23 @@ header.top{position:sticky;top:env(safe-area-inset-top, 0px);z-index:20;backgrou
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--f-display);font-weight:800;font-size:1.1rem}
 .brand img{width:36px;height:36px;border-radius:50%;object-fit:cover;border:1px solid var(--line)}
 .nav{display:flex;gap:22px;font-size:.93rem}
-.nav a{text-decoration:none;color:var(--muted)}
-.nav a:hover{color:var(--ink)}
-.top .btn{padding:10px 16px;font-size:.92rem}
-@media (max-width:900px){.nav{display:none}}
-
-/* hero */
 .hero{padding-block:clamp(40px,7vw,84px) clamp(48px,7vw,80px)}
-.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(32px,5vw,64px);align-items:center}
+.hero .wrap>div{max-width:860px}
 .hero h1{font-size:clamp(2.4rem,6vw,4.3rem);font-weight:800;margin-block:14px 20px}
 .hero h1 em{font-style:normal;color:var(--cobalt)}
 .hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
 .avail{display:inline-flex;align-items:center;gap:8px;font-size:.9rem;color:var(--muted);background:var(--surface);border:1px solid var(--line);padding:6px 12px 6px 8px;border-radius:999px}
 .avail i{width:9px;height:9px;border-radius:50%;background:var(--zap);box-shadow:0 0 0 4px color-mix(in srgb,var(--zap) 22%,transparent)}
-.facts{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:34px;padding-top:22px;border-top:1px solid var(--line)}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,max-content));gap:14px 32px;margin-top:34px;padding-top:22px;border-top:1px solid var(--line)}
 .facts div{display:grid}
 .facts b{font-family:var(--f-display);font-size:1.35rem;font-weight:800}
 .facts span{font-size:.85rem;color:var(--muted)}
-@media (max-width:860px){.hero .wrap{grid-template-columns:1fr}}
 
-/* "chat" mockup: o link sendo compartilhado */
-.chat{background:var(--chat);border-radius:26px;padding:18px;border:1px solid var(--line);max-width:420px;justify-self:center;width:100%}
-.chat-top{display:flex;align-items:center;gap:10px;padding:4px 4px 14px;border-bottom:1px solid color-mix(in srgb,var(--ink) 10%,transparent);margin-bottom:14px}
-.chat-top .sd-av{width:40px;height:40px;border-radius:50%;background:#e8195a;color:#fff;display:grid;place-items:center;font-weight:800;font-family:var(--f-display);font-size:.9rem;flex:none}
-.chat-top b{display:block;font-size:.95rem}
-.chat-top small{color:var(--muted);font-size:.78rem}
-.msg{background:var(--bubble);border-radius:4px 16px 16px 16px;padding:8px;max-width:92%;box-shadow:0 1px 1px rgba(0,0,0,.06);font-size:.92rem}
-.msg+.msg{margin-top:10px}
-.msg.me{margin-left:auto;border-radius:16px 4px 16px 16px}
-.og{border-radius:10px;overflow:hidden;border:1px solid var(--line);background:var(--paper)}
-.og-img{aspect-ratio:1.91/1;max-width:100%;background:linear-gradient(135deg,#e8195a,#ff6f9a);display:grid;place-items:center;color:#fff;font-family:var(--f-display);font-weight:800;font-size:1.5rem;text-align:center;padding:12px;line-height:1.05}
-.og-img small{display:block;font-family:var(--f-body);font-weight:500;font-size:.75rem;opacity:.9;margin-top:6px}
-.og-txt{padding:8px 10px}
-.og-txt b{display:block;font-size:.86rem}
-.og-txt span{display:block;font-size:.78rem;color:var(--muted)}
-.og-txt u{display:block;text-decoration:none;font-family:var(--f-mono);font-size:.72rem;color:var(--muted);margin-top:2px}
-.msg p{padding:6px 4px 2px}
-.msg time{display:block;text-align:right;font-size:.7rem;color:var(--muted)}
 
 /* serviços */
 .svc{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
 .svc article{background:var(--surface);padding:26px;display:grid;gap:10px;align-content:start}
 .svc .ic{width:42px;height:42px;border-radius:12px;background:var(--cobalt-soft);color:var(--cobalt);display:grid;place-items:center}
-.svc .ic svg{width:22px;height:22px}
-.svc p{color:var(--muted);font-size:.95rem}
-.svc .tag{font-family:var(--f-mono);font-size:.75rem;color:var(--muted)}
-@media (max-width:900px){.svc{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (max-width:560px){.svc{grid-template-columns:1fr}}
-
-/* portfólio */
-.band{background:var(--surface);border-block:1px solid var(--line)}
-.works{display:grid;gap:28px}
 .work{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,4vw,48px);align-items:center;padding:24px;border:1px solid var(--line);border-radius:20px;background:var(--paper)}
 .work:nth-child(even) .shot{order:2}
 .work .info{display:grid;gap:12px;min-width:0}
@@ -133,12 +99,6 @@ header.top{position:sticky;top:env(safe-area-inset-top, 0px);z-index:20;backgrou
 .vp{aspect-ratio:16/10;max-width:100%;position:relative;overflow:hidden;color:#1d1d1f;font-family:var(--f-body)}
 /* prints reais */
 .vp img{display:block;width:100%;height:100%;object-fit:cover;object-position:top}
-.stage{border-radius:16px;padding:22px;display:grid;place-items:center;min-width:0}
-.stage.pink{background:linear-gradient(160deg,#ffe4ec,#ffc4d6)}
-.phone{width:min(240px,70%);border-radius:30px;border:8px solid #1b1d22;background:#1b1d22;overflow:hidden;box-shadow:0 22px 40px -22px rgba(20,26,36,.6)}
-.phone img{display:block;width:100%;height:auto;border-radius:22px}
-.duo{position:relative;padding-bottom:16%;min-width:0}
-.duo .shot.front{position:absolute;right:-4px;bottom:0;width:62%}
 .duo .shot.back{width:88%}
 .cap{font-family:var(--f-mono);font-size:.7rem;color:var(--muted);margin-top:8px;text-align:center}
 
@@ -160,15 +120,6 @@ header.top{position:sticky;top:env(safe-area-inset-top, 0px);z-index:20;backgrou
 .price{font-family:var(--f-display);font-weight:800;font-size:2.5rem;line-height:1;font-variant-numeric:tabular-nums}
 .price small{font-family:var(--f-body);font-size:.85rem;font-weight:500;color:var(--muted)}
 .meta{display:flex;gap:16px;font-family:var(--f-mono);font-size:.78rem;color:var(--muted);padding-block:10px;border-block:1px dashed var(--line)}
-.plan ul{list-style:none;padding:0;margin:0;display:grid;gap:9px;font-size:.94rem;flex:1}
-.plan li{display:grid;grid-template-columns:18px 1fr;gap:8px}
-.plan li::before{content:"";width:14px;height:14px;margin-top:5px;border-radius:4px;background:var(--cobalt-soft);box-shadow:inset 0 0 0 4px var(--cobalt)}
-.plan .btn{justify-content:center}
-.note{margin-top:22px;color:var(--muted);font-size:.9rem}
-@media (max-width:900px){.plans{grid-template-columns:1fr}}
-
-/* processo */
-.steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;counter-reset:s;list-style:none;padding:0;margin:0}
 .steps li{counter-increment:s;padding:20px 18px;border-top:3px solid var(--cobalt);background:var(--surface);border-radius:0 0 12px 12px;display:grid;gap:6px;align-content:start}
 .steps li::before{content:"Etapa " counter(s);font-family:var(--f-mono);font-size:.74rem;color:var(--cobalt);letter-spacing:.06em;text-transform:uppercase}
 .steps b{font-family:var(--f-display);font-size:1.05rem}
@@ -190,18 +141,6 @@ header.top{position:sticky;top:env(safe-area-inset-top, 0px);z-index:20;backgrou
 .tl div::before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--surface);border:2px solid var(--cobalt)}
 .tl b{display:block}
 .tl small{font-family:var(--f-mono);font-size:.78rem;color:var(--muted)}
-.tl p{color:var(--muted);font-size:.93rem;margin-top:4px}
-.skills{display:flex;flex-wrap:wrap;gap:8px}
-@media (max-width:480px){.who img{width:56px;height:56px}}
-
-/* redes sociais */
-.plats{display:flex;flex-wrap:wrap;gap:10px}
-.plat{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border:1px solid var(--line);border-radius:12px;background:var(--surface);font-weight:600;text-decoration:none}
-.plat small{font-weight:400;color:var(--muted);font-size:.8rem}
-a.plat:hover{border-color:var(--cobalt)}
-
-/* faq */
-.faq{display:grid;gap:10px;max-width:820px}
 .faq details{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:4px 18px}
 .faq summary{cursor:pointer;padding:14px 0;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:16px}
 .faq summary::-webkit-details-marker{display:none}
@@ -223,10 +162,6 @@ a.plat:hover{border-color:var(--cobalt)}
 form.brief{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:26px;display:grid;gap:14px}
 .brief label{display:grid;gap:6px;font-weight:600;font-size:.92rem}
 .brief input,.brief select,.brief textarea{font:inherit;font-weight:400;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--paper);color:var(--ink);width:100%}
-.brief textarea{min-height:96px;resize:vertical}
-.brief .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.brief .hint{font-size:.82rem;color:var(--muted)}
-@media (max-width:820px){.contact{grid-template-columns:1fr}}
 @media (max-width:480px){.brief .row{grid-template-columns:1fr}}
 
 footer{border-top:1px solid var(--line);padding-block:28px;color:var(--muted);font-size:.88rem}
@@ -247,8 +182,6 @@ footer a{color:var(--muted)}
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2a9.9 9.9 0 0 0-8.5 15l-1.4 5 5.2-1.36A9.9 9.9 0 1 0 12.04 2Zm0 18.1a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.08.8.82-3-.2-.31a8.2 8.2 0 1 1 6.94 3.84Zm4.5-6.14c-.25-.12-1.46-.72-1.69-.8-.23-.08-.39-.12-.55.12-.16.25-.63.8-.78.97-.14.16-.29.18-.53.06a6.7 6.7 0 0 1-3.32-2.9c-.25-.43.25-.4.72-1.33.08-.16.04-.3-.02-.43-.06-.12-.55-1.33-.76-1.82-.2-.48-.4-.41-.55-.42h-.47a.9.9 0 0 0-.65.3 2.74 2.74 0 0 0-.86 2.04 4.76 4.76 0 0 0 1 2.53 10.9 10.9 0 0 0 4.17 3.68c1.55.67 2.16.73 2.94.61.47-.07 1.46-.6 1.66-1.17.2-.58.2-1.07.15-1.17-.06-.1-.22-.16-.47-.28Z"/></symbol>
   <symbol id="i-gh" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.3 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></symbol>
-  <symbol id="i-mail" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M3 6.5h18v11H3zM3.5 7l8.5 6.5L20.5 7"/></symbol>
-  <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="m5 12.5 4.2 4L19 7"/></symbol>
   <symbol id="i-group" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="9" cy="8.5" r="3.2"/><path d="M3.5 19c.6-3 2.8-4.6 5.5-4.6s4.9 1.6 5.5 4.6"/><circle cx="17" cy="9.5" r="2.4"/><path d="M16 14.5c2.3 0 4 1.3 4.5 3.8"/></g></symbol>
   <symbol id="i-shop" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M4 9h16l-1 11H5z"/><path d="M8.5 9V7a3.5 3.5 0 0 1 7 0v2"/></g></symbol>
   <symbol id="i-link" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M10 14a4 4 0 0 0 5.66 0l3-3a4 4 0 0 0-5.66-5.66l-1 1"/><path d="M14 10a4 4 0 0 0-5.66 0l-3 3a4 4 0 0 0 5.66 5.66l1-1"/></g></symbol>
@@ -259,79 +192,28 @@ footer a{color:var(--muted)}
 
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="#inicio"><img src="assets/foto_avatar.jpg" alt="">Matheus Abelardo</a>
-    <nav class="nav" aria-label="Seções">
-      <a href="#servicos">Serviços</a><a href="#portfolio">Portfólio</a><a href="#planos">Planos</a><a href="#processo">Como funciona</a><a href="#sobre">Sobre</a><a href="#faq">Dúvidas</a>
-    </nav>
-    <a class="btn btn-zap" href="https://wa.me/5531983410907?text=Ol%C3%A1%20Matheus!%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20um%20or%C3%A7amento%20de%20landing%20page." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Orçamento</a>
-  </div>
-</header>
-
-<main id="inicio">
-<section class="hero">
-  <div class="wrap">
-    <div>
-      <span class="avail"><i></i>Aceitando novos projetos · resposta no mesmo dia</span>
-      <h1>Landing pages <em>rápidas</em>, leves e prontas pra compartilhar todo dia.</h1>
-      <p class="lead">Sou desenvolvedor web e estudante de Engenharia da Computação na UFOP. Crio páginas de uma tela para grupos de WhatsApp, vitrines de produtos, promoções e negócios locais. Você recebe um link que abre rápido no celular e aparece bonito quando é colado no WhatsApp ou no Instagram.</p>
+      <h1>Precisa de um site? <em>Me chame</em> que eu resolvo o seu problema.</h1>
+      <p class="lead">Sou desenvolvedor web e estudante de Engenharia da Computação na UFOP. Crio sites sob medida para o seu negócio: sites institucionais, landing pages, lojas e catálogos online, sistemas com painel de gestão e integrações com o WhatsApp. Do primeiro contato à publicação, você fala direto comigo.</p>
       <div class="ctas">
-        <a class="btn btn-zap" href="https://wa.me/5531983410907?text=Ol%C3%A1%20Matheus!%20Quero%20uma%20landing%20page." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Falar no WhatsApp</a>
+        <a class="btn btn-zap" href="https://wa.me/5531983410907?text=Ol%C3%A1%20Matheus!%20Preciso%20de%20um%20site." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Falar no WhatsApp</a>
         <a class="btn btn-ghost" href="#portfolio">Ver projetos</a>
       </div>
       <div class="facts">
-        <div><b>48 h</b><span>prazo do plano Express</span></div>
         <div><b>3+ anos</b><span>em projetos web reais</span></div>
-        <div><b>100% mobile</b><span>pensado para o celular</span></div>
+        <div><b>Responsivo</b><span>sites para celular e computador</span></div>
+        <div><b>Sob medida</b><span>feito para o seu negócio</span></div>
+        <div><b>48 h</b><span>prazo de uma landing page</span></div>
       </div>
-    </div>
-
-    <div class="chat" aria-label="Exemplo: link da página sendo compartilhado no WhatsApp">
-      <div class="chat-top"><span class="sd-av">SD</span><div><b>Seleção Delas 💖</b><small>grupo de promoções</small></div></div>
-      <div class="msg">
-        <div class="og">
-          <div class="og-img" style="padding:0"><img src="assets/og_selecao.jpg" alt="" width="533" height="279" style="display:block;width:100%;height:100%;object-fit:cover"></div>
-          <div class="og-txt"><b>Seleção Delas · Grupo VIP de promoções</b><span>Cupons que funcionam e achados de moda e beleza todo dia.</span><u>selecaodelas.github.io</u></div>
-        </div>
-        <p>Entrem no grupo VIP pelo link 👆 é grátis!</p>
-        <time>09:41</time>
-      </div>
-      <div class="msg me"><p>Entrei! A página abriu rapidinho 😍</p><time>09:42</time></div>
     </div>
   </div>
 </section>
 
-<section id="servicos" class="band">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow">Serviços</span>
-      <h2>Páginas simples que fazem uma coisa muito bem</h2>
-      <p class="lead">Cada página tem um objetivo claro: levar a pessoa a entrar no grupo, chamar no WhatsApp, comprar ou se inscrever.</p>
-    </div>
     <div class="svc">
-      <article><div class="ic"><svg><use href="#i-group"/></svg></div><h3>Página para grupo de WhatsApp ou Telegram</h3><p>Convite com foto, chamada forte e botão de entrada. Ideal para grupos de promoções, achadinhos, cupons e comunidades.</p><span class="tag">ex.: Seleção Delas</span></article>
-      <article><div class="ic"><svg><use href="#i-shop"/></svg></div><h3>Vitrine virtual com pedido no WhatsApp</h3><p>Catálogo de produtos com fotos e preços. O cliente escolhe e envia o pedido pronto no WhatsApp da loja.</p><span class="tag">ex.: Hortifruti J&amp;M</span></article>
-      <article><div class="ic"><svg><use href="#i-link"/></svg></div><h3>Página de links para a bio</h3><p>Sua própria página de links para Instagram e TikTok, com a sua marca, sem depender de ferramentas de terceiros.</p><span class="tag">substitui Linktree</span></article>
-      <article><div class="ic"><svg><use href="#i-cal"/></svg></div><h3>Promoção, lançamento ou evento</h3><p>Página com data, oferta, contagem regressiva e botão de inscrição para divulgar por tempo limitado.</p><span class="tag">campanhas diárias</span></article>
-      <article><div class="ic"><svg><use href="#i-build"/></svg></div><h3>Site institucional simples</h3><p>Uma página com quem somos, serviços, horários, mapa e contato para negócios locais, clínicas e prestadores.</p><span class="tag">ex.: Hospital São José</span></article>
-      <article><div class="ic"><svg><use href="#i-tool"/></svg></div><h3>Ajustes e atualizações</h3><p>Troca de textos, fotos, links e ofertas em páginas que já existem, inclusive páginas feitas por outra pessoa.</p><span class="tag">entrega em até 24 h</span></article>
-    </div>
-  </div>
-</section>
-
-<section id="portfolio">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow">Portfólio</span>
-      <h2>Projetos publicados</h2>
-      <p class="lead">Todos estão no ar. Abra no celular para ver como carregam.</p>
-    </div>
-    <div class="works">
-
-      <article class="work">
-        <div class="stage pink"><div class="phone"><img src="assets/print_selecao.jpg" alt="Página Seleção Delas no celular" width="533" height="754"></div></div>
-        <div class="info">
-          <div class="kind"><span class="chip hl">Landing page</span><span class="chip">Grupo de WhatsApp</span><span class="chip">GitHub Pages</span></div>
-          <h3>Seleção Delas · Grupo VIP de promoções</h3>
+      <article><div class="ic"><svg><use href="#i-build"/></svg></div><h3>Site institucional</h3><p>Apresente sua empresa com páginas de serviços, equipe, galeria, depoimentos, mapa e contato. Ideal para clínicas, escritórios, comércios e prestadores.</p><span class="tag">ex.: Hospital São José</span></article>
+      <article><div class="ic"><svg><use href="#i-link"/></svg></div><h3>Landing page</h3><p>Página focada em uma ação: vender um produto, captar contatos, divulgar um grupo ou lançar uma campanha.</p><span class="tag">ex.: Seleção Delas</span></article>
+      <article><div class="ic"><svg><use href="#i-shop"/></svg></div><h3>Loja e catálogo online</h3><p>Vitrine de produtos com busca, fotos e preços. O cliente monta o pedido e envia direto para o WhatsApp da loja.</p><span class="tag">ex.: Hortifruti J&amp;M</span></article>
+      <article><div class="ic"><svg><use href="#i-cal"/></svg></div><h3>Sistemas web e painéis</h3><p>Área com login para controlar vendas, estoque, caixa, agendamentos ou cadastros, com dados salvos em banco de dados.</p><span class="tag">PHP, Laravel, Supabase</span></article>
+      <article><div class="ic"><svg><use href="#i-group"/></svg></div><h3>Automações e WhatsApp</h3><p>Formulários que viram mensagem, bots de atendimento e fluxos automáticos que integram seu site a outras ferramentas.</p><span class="tag">n8n e bots</span></article>
           <p class="lead">Página de captação para o grupo de promoções de moda e beleza da Monaline. Foi feita para ser divulgada todos os dias em stories, status e anúncios.</p>
           <ul>
             <li>Um único botão de ação que leva direto ao convite do grupo</li>
@@ -351,23 +233,6 @@ footer a{color:var(--muted)}
           <div class="kind"><span class="chip hl">Vitrine virtual</span><span class="chip">Supabase</span><span class="chip">Painel de gestão</span></div>
           <h3>Hortifruti J&amp;M · Vitrine virtual + painel</h3>
           <p class="lead">Vitrine online de um hortifruti, com busca de produtos e pedido pelo WhatsApp. Por trás dela há um painel de gestão onde o lojista controla vendas, estoque, caixa, fiados e retiradas, com lucro e margem por período.</p>
-          <ul>
-            <li>Botão de WhatsApp com mensagem pronta</li>
-            <li>73 produtos cadastrados no banco de dados (Supabase), com alerta de estoque baixo</li>
-            <li>Botões de acessibilidade (aumentar fonte e tema) e atalhos para Maps, Instagram e WhatsApp</li>
-          </ul>
-          <p class="url"><a href="https://abelardo-matheus.github.io/Hortifrut_Web/" target="_blank" rel="noopener">abelardo-matheus.github.io/Hortifrut_Web ↗</a></p>
-        </div>
-      </article>
-
-      <article class="work">
-        <div class="shot">
-          <div class="bar"><i></i><i></i><i></i><span>hsjnovaera.com.br</span></div>
-          <div class="vp" style="aspect-ratio:1200/550"><img src="assets/print_hsj.jpg" alt="Página inicial do site do Hospital São José" width="1200" height="550"></div>
-        </div>
-        <div class="info">
-          <div class="kind"><span class="chip hl">Referência profissional</span><span class="chip">Site institucional</span><span class="chip">Bootstrap</span></div>
-          <h3>Hospital São José de Nova Era</h3>
           <p class="lead">Site institucional desenvolvido pela Visão Empresa Jr. Fui responsável por cerca de 50% do desenvolvimento, trabalhando em equipe com Scrum.</p>
           <ul>
             <li>Carrosséis adaptativos e banners responsivos</li>
@@ -385,16 +250,12 @@ footer a{color:var(--muted)}
 <section class="band">
   <div class="wrap">
     <div class="sec-head">
-      <span class="eyebrow">Incluso em toda página</span>
+      <span class="eyebrow">Incluso em todo projeto</span>
       <h2>O básico bem-feito, sem custo extra</h2>
     </div>
     <div class="incl">
-      <div><svg><use href="#i-check"/></svg><p><b>Feita primeiro para o celular</b><span>A maior parte do público chega pelo WhatsApp e Instagram, então o layout nasce no celular.</span></p></div>
-      <div><svg><use href="#i-check"/></svg><p><b>Prévia bonita ao compartilhar</b><span>Título, descrição e imagem configurados para o card que aparece no WhatsApp, Facebook e X.</span></p></div>
-      <div><svg><use href="#i-check"/></svg><p><b>Botão de WhatsApp com mensagem pronta</b><span>O cliente toca e a conversa já abre com o texto que você escolheu.</span></p></div>
-      <div><svg><use href="#i-check"/></svg><p><b>Carregamento rápido</b><span>HTML e CSS enxutos, imagens otimizadas em WebP e nada de plugins pesados.</span></p></div>
-      <div><svg><use href="#i-check"/></svg><p><b>Hospedagem gratuita</b><span>Publicação no GitHub Pages ou Netlify. Domínio próprio (.com.br) é opcional.</span></p></div>
-      <div><svg><use href="#i-check"/></svg><p><b>Código entregue para você</b><span>A página é sua. Você recebe os arquivos e o acesso para usar onde quiser.</span></p></div>
+      <div><svg><use href="#i-check"/></svg><p><b>Responsivo para celular e computador</b><span>O layout se adapta a qualquer tela: celular, tablet e PC.</span></p></div>
+      <div><svg><use href="#i-check"/></svg><p><b>Código entregue para você</b><span>O site é seu. Você recebe os arquivos e o acesso para usar onde quiser.</span></p></div>
     </div>
   </div>
 </section>
@@ -404,49 +265,34 @@ footer a{color:var(--muted)}
     <div class="sec-head">
       <span class="eyebrow">Planos</span>
       <h2>Preço fechado antes de começar</h2>
-      <p class="lead">Escolha um ponto de partida. O valor final é confirmado no WhatsApp depois que eu entendo o seu projeto.</p>
+      <p class="lead">Escolha um ponto de partida. O valor final depende do tamanho do projeto e é confirmado no WhatsApp antes de começar.</p>
     </div>
     <div class="plans">
       <article class="plan">
-        <h3>Express</h3>
-        <p class="for">Para quem precisa de um link no ar ainda nesta semana.</p>
+        <h3>Landing page</h3>
+        <p class="for">Uma página focada em vender, captar contatos ou divulgar.</p>
         <div class="price"><small>a partir de</small><br>R$ 197</div>
-        <div class="meta"><span>48 h</span><span>1 seção</span><span>1 revisão</span></div>
+        <div class="meta"><span>48 h</span><span>1 página</span><span>1 revisão</span></div>
         <ul>
-          <li>Página de uma tela com foto, título e botão</li>
-          <li>Botão de WhatsApp ou link do grupo</li>
-          <li>Prévia para WhatsApp e redes</li>
-          <li>Publicação gratuita no GitHub Pages</li>
+          <li>Layout responsivo para celular e computador</li>
+          <li>Botão de WhatsApp com mensagem pronta</li>
+          <li>Prévia bonita ao compartilhar o link</li>
+          <li>Publicação gratuita</li>
         </ul>
-        <a class="btn btn-ghost" href="https://wa.me/5531983410907?text=Ol%C3%A1!%20Tenho%20interesse%20no%20plano%20Express." target="_blank" rel="noopener">Quero o Express</a>
+        <a class="btn btn-ghost" href="https://wa.me/5531983410907?text=Ol%C3%A1!%20Tenho%20interesse%20em%20uma%20landing%20page." target="_blank" rel="noopener">Quero uma landing page</a>
       </article>
       <article class="plan feat">
-        <h3>Padrão</h3>
-        <p class="for">Para negócios que querem apresentar bem o que vendem.</p>
+        <h3>Site profissional</h3>
+        <p class="for">Para empresas que precisam de presença completa na internet.</p>
         <div class="price"><small>a partir de</small><br>R$ 397</div>
-        <div class="meta"><span>3 dias</span><span>até 5 seções</span><span>2 revisões</span></div>
-        <ul>
-          <li>Tudo do Express</li>
-          <li>Benefícios, depoimentos, galeria e perguntas frequentes</li>
-          <li>Formulário ou pedido com mensagem pronta no WhatsApp</li>
-          <li>SEO básico e Google Analytics</li>
-          <li>Textos revisados para vender</li>
-        </ul>
-        <a class="btn btn-zap" href="https://wa.me/5531983410907?text=Ol%C3%A1!%20Tenho%20interesse%20no%20plano%20Padr%C3%A3o." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Quero o Padrão</a>
-      </article>
-      <article class="plan">
-        <h3>Completo</h3>
-        <p class="for">Para vitrines e catálogos que o próprio cliente atualiza.</p>
-        <div class="price"><small>a partir de</small><br>R$ 697</div>
-        <div class="meta"><span>5–7 dias</span><span>catálogo</span><span>3 revisões</span></div>
-        <ul>
-          <li>Tudo do Padrão</li>
-          <li>Vitrine de produtos com banco de dados</li>
-          <li>Área de login para editar produtos e preços</li>
-          <li>Pixel da Meta e configuração de domínio próprio</li>
+        <div class="meta"><span>3–5 dias</span><span>várias seções</span><span>2 revisões</span></div>
+          <li>Tudo do site profissional</li>
+          <li>Catálogo, loja ou sistema com banco de dados</li>
+          <li>Área de login e painel de gestão</li>
+          <li>Integrações e automações (WhatsApp, n8n, Pixel da Meta)</li>
           <li>30 dias de suporte após a entrega</li>
         </ul>
-        <a class="btn btn-ghost" href="https://wa.me/5531983410907?text=Ol%C3%A1!%20Tenho%20interesse%20no%20plano%20Completo." target="_blank" rel="noopener">Quero o Completo</a>
+        <a class="btn btn-ghost" href="https://wa.me/5531983410907?text=Ol%C3%A1!%20Preciso%20de%20um%20projeto%20sob%20medida." target="_blank" rel="noopener">Pedir orçamento</a>
       </article>
     </div>
     <p class="note">Pagamento: 50% para começar e 50% na entrega, por Pix. Domínio próprio é pago à parte, direto ao registro.br (cerca de R$ 40 por ano). Atualizações depois da entrega a partir de R$ 30.</p>
@@ -457,54 +303,18 @@ footer a{color:var(--muted)}
   <div class="wrap">
     <div class="sec-head">
       <span class="eyebrow">Como funciona</span>
-      <h2>Do primeiro “oi” ao link no ar</h2>
+      <h2>Do primeiro “oi” ao site no ar</h2>
     </div>
     <ol class="steps">
       <li><b>Conversa</b><span>Você me conta o objetivo, o público e manda logo, fotos e textos que já tiver.</span><em>WhatsApp · 15 min</em></li>
       <li><b>Proposta</b><span>Envio preço, prazo e o que está incluso. Com o sinal de 50%, o projeto entra na fila.</span><em>no mesmo dia</em></li>
       <li><b>Primeira versão</b><span>Você recebe um link de prévia para abrir no próprio celular.</span><em>24 h a 5 dias</em></li>
       <li><b>Ajustes</b><span>Mudanças de texto, cor e ordem das seções dentro das revisões do plano.</span><em>até 24 h cada</em></li>
-      <li><b>Publicação</b><span>Página no ar, link final, arquivos entregues e instruções para atualizar.</span><em>link pronto</em></li>
+      <li><b>Publicação</b><span>Site no ar, arquivos entregues e instruções para atualizar.</span><em>link pronto</em></li>
     </ol>
   </div>
 </section>
 
-<section id="sobre">
-  <div class="wrap about">
-    <div class="txt">
-      <span class="eyebrow">Sobre mim</span>
-      <div class="who">
-        <img src="assets/foto_avatar.jpg" alt="Foto de Matheus Abelardo" width="72" height="72">
-        <div><h2>Matheus Abelardo Trevenzole Araujo</h2><small>João Monlevade, MG · atendimento remoto em todo o Brasil</small></div>
-      </div>
-      <p>Desenvolvedor de software full stack em formação e estudante do 7º período de Engenharia da Computação na Universidade Federal de Ouro Preto (UFOP). Trabalho com desenvolvimento web há mais de 3 anos, em projetos reais que vão do levantamento de requisitos ao deploy. Também tenho experiência com automação de processos em n8n, bots de atendimento e suporte direto a clientes, o que me ajuda a entender o que o seu negócio precisa sem complicar.</p>
-      <div class="tl">
-        <div><b>Desenvolvedor & Suporte Técnico · WaSpeed</b><small>abr/2026 – ago/2026 · remoto</small><p>Extensão de CRM para WhatsApp: novas funcionalidades, automações com n8n e bots de atendimento.</p></div>
-        <div><b>Desenvolvedor Web · Visão Empresa Jr.</b><small>mai/2022 – atual · João Monlevade, MG</small><p>Projetos web reais, incluindo o site do Hospital São José de Nova Era, em equipe Scrum.</p></div>
-        <div><b>Estagiário de Desenvolvimento · Cafezinho</b><small>ago/2024 – jun/2025 · Ribeirão Preto, SP</small><p>Aplicativo com PHP, Laravel, Java e Kotlin. Docker para padronizar ambientes.</p></div>
-        <div><b>Instrutor de Informática · Microlins</b><small>nov/2021 – jul/2022 · Ipatinga, MG</small><p>Aulas de Windows, Office e Photoshop.</p></div>
-      </div>
-      <div class="skills">
-        <span class="chip hl">HTML</span><span class="chip hl">CSS</span><span class="chip hl">JavaScript</span><span class="chip hl">Bootstrap</span><span class="chip">PHP</span><span class="chip">Laravel</span><span class="chip">Supabase</span><span class="chip">SQL</span><span class="chip">Python</span><span class="chip">Java</span><span class="chip">Kotlin</span><span class="chip">Git e GitHub</span><span class="chip">Docker</span><span class="chip">n8n</span><span class="chip">Photoshop</span><span class="chip">Scrum / XP</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="faq" class="band">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow">Dúvidas frequentes</span>
-      <h2>Antes de pedir seu orçamento</h2>
-    </div>
-    <div class="faq">
-      <details open><summary>Quanto tempo leva para ficar pronto?</summary><p>O plano Express fica pronto em até 48 horas depois que recebo os textos e as imagens. O Padrão leva cerca de 3 dias e o Completo de 5 a 7 dias.</p></details>
-      <details><summary>Preciso pagar hospedagem?</summary><p>Não. Publico no GitHub Pages ou no Netlify, que são gratuitos. Se quiser um domínio próprio, como seunegocio.com.br, ele é registrado no seu nome e custa cerca de R$ 40 por ano.</p></details>
-      <details><summary>Não tenho textos nem fotos. E agora?</summary><p>Eu escrevo os textos a partir de uma conversa rápida e uso imagens de bancos gratuitos com licença comercial. Você só aprova.</p></details>
-      <details><summary>Consigo mudar a página depois?</summary><p>Sim. Pequenas mudanças custam a partir de R$ 30. No plano Completo você mesmo atualiza produtos e preços pelo painel.</p></details>
-      <details><summary>Como funciona o pagamento?</summary><p>50% via Pix para começar e 50% na entrega.</p></details>
-      <details><summary>A página aparece no Google?</summary><p>Sim. Todas saem com título, descrição e estrutura corretos para os buscadores. Nos planos Padrão e Completo eu também cadastro a página no Google Search Console.</p></details>
-    </div>
   </div>
 </section>
 
@@ -512,7 +322,7 @@ footer a{color:var(--muted)}
   <div class="wrap contact">
     <div class="txt" style="display:grid;gap:18px">
       <span class="eyebrow">Contato</span>
-      <h2>Vamos colocar sua página no ar?</h2>
+      <h2>Precisa de um site? Vamos conversar.</h2>
       <p class="lead">Respondo no mesmo dia, de segunda a sábado.</p>
       <div class="cards">
         <div class="ccard"><div class="ic"><svg><use href="#i-wa"/></svg></div><div><small>WhatsApp</small><b>(31) 98341-0907</b></div><a class="copy" href="https://wa.me/5531983410907" target="_blank" rel="noopener">Abrir</a></div>
@@ -524,72 +334,6 @@ footer a{color:var(--muted)}
 
     <form class="brief" id="brief" novalidate>
       <h3>Monte seu pedido em 30 segundos</h3>
-      <p class="hint">Preencha e toque no botão. A mensagem abre pronta no meu WhatsApp.</p>
-      <div class="row">
-        <label for="f-nome">Seu nome<input id="f-nome" name="nome" autocomplete="name" placeholder="Ex.: Ana"></label>
-        <label for="f-neg">Negócio ou projeto<input id="f-neg" name="negocio" placeholder="Ex.: loja de roupas"></label>
-      </div>
-      <div class="row">
-        <label for="f-tipo">Tipo de página
-          <select id="f-tipo" name="tipo">
-            <option>Página para grupo de WhatsApp</option>
-            <option>Vitrine com pedido no WhatsApp</option>
-            <option>Página de links para a bio</option>
-            <option>Promoção ou evento</option>
-            <option>Site institucional simples</option>
-            <option>Ajuste em página existente</option>
-          </select>
-        </label>
-        <label for="f-plano">Plano
-          <select id="f-plano" name="plano">
-            <option>Ainda não sei</option><option>Express (48 h)</option><option selected>Padrão (3 dias)</option><option>Completo (5–7 dias)</option>
-          </select>
-        </label>
-      </div>
-      <label for="f-msg">Conte um pouco do que você precisa<textarea id="f-msg" name="msg" placeholder="Ex.: preciso de uma página para divulgar meu grupo de ofertas no Instagram"></textarea></label>
-      <a class="btn btn-zap" id="send" href="https://wa.me/5531983410907" target="_blank" rel="noopener" style="justify-content:center"><svg><use href="#i-wa"/></svg>Enviar pedido no WhatsApp</a>
-    </form>
-  </div>
-</section>
-</main>
-
-<footer>
-  <div class="wrap">
-    <p class="ai-note"><b>Feito com inteligência artificial.</b> Este site foi criado com o apoio de IA. Nos meus projetos, uso IA como base para a criação: ela me dá o ponto de partida, e a partir dele eu ajusto o design, reviso o código e personalizo cada página para o cliente.</p>
-    <span class="brk" aria-hidden="true"></span>
-    <span>© 2026 Matheus Abelardo · Landing pages e sites simples</span>
-    <span><a href="https://github.com/Abelardo-Matheus" target="_blank" rel="noopener">GitHub</a> · <a href="https://wa.me/5531983410907" target="_blank" rel="noopener">WhatsApp</a> · <a href="#inicio">Voltar ao topo</a></span>
-  </div>
-</footer>
-
-<a class="fab" href="https://wa.me/5531983410907?text=Ol%C3%A1%20Matheus!%20Quero%20um%20or%C3%A7amento." target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><svg><use href="#i-wa"/></svg></a>
-
-<script>
-/* ===== EDITE AQUI: cole os links das suas redes sociais ===== */
-const PERFIS = {
-  redes: [
-    { nome: "LinkedIn",  url: "" },
-    { nome: "Instagram", url: "" }
-  ]
-};
-/* ======================================================================== */
-function chip(p, withDesc){
-  const el = document.createElement(p.url ? "a" : "span");
-  el.className = "plat";
-  if (p.url){ el.href = p.url; el.target = "_blank"; el.rel = "noopener"; }
-  el.textContent = p.nome;
-  if (withDesc && p.desc){ const s = document.createElement("small"); s.textContent = p.desc; el.appendChild(s); }
-  return el;
-}
-const soc = document.getElementById("socials");
-PERFIS.redes.filter(r => r.url).forEach(r => soc.appendChild(chip(r, false)));
-
-/* copiar e-mail */
-document.querySelectorAll("[data-copy]").forEach(b => b.addEventListener("click", () => {
-  const t = document.getElementById(b.dataset.copy);
-  const done = () => { b.textContent = "Copiado"; setTimeout(() => b.textContent = "Copiar", 1800); };
-  const fallback = () => { const r = document.createRange(); r.selectNodeContents(t); const s = getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent = "Selecionado"; };
-  if (navigator.clipboard) navigator.clipboard.writeText(t.textContent).then(done, fallback); else fallback();
 }));
 
 /* pedido -> link do WhatsApp com mensagem pronta */
@@ -600,7 +344,7 @@ function build(){
     "Olá Matheus! Vim pelo seu portfólio.",
     v("f-nome") && ("Nome: " + v("f-nome")),
     v("f-neg") && ("Negócio: " + v("f-neg")),
-    "Tipo de página: " + v("f-tipo"),
+    "Tipo de projeto: " + v("f-tipo"),
     "Plano: " + v("f-plano"),
     v("f-msg") && ("Detalhes: " + v("f-msg"))
   ].filter(Boolean);
